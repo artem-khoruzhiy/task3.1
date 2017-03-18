@@ -39,10 +39,7 @@ public class ResultPage {
             String vacancy = el.getText();
             boolean condition = false;
             for (String word : wordsOfQuery){
-                if (vacancy.contains(word)){
-                    condition = true;
-                }
-                else if (vacancy.contains(word.toLowerCase())){
+                if (vacancy.toLowerCase().contains(word)){
                     condition = true;
                 }
                 else {
